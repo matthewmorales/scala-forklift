@@ -35,7 +35,7 @@ lazy val slickDependenciesWithTests = slickDependencies ++ List(
 ).map(_ % "test")
 
 lazy val commonSettings = Seq(
-  organization := "com.liyaos",
+  organization := "com.matthewmorales",
   licenses := Seq("Apache 2.0" ->
     url("https://github.com/lastland/scala-forklift/blob/master/LICENSE")),
   homepage := Some(url("https://github.com/lastland/scala-forklift")),
