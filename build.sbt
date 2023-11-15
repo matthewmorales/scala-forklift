@@ -16,7 +16,7 @@ lazy val coreDependencies = libraryDependencies ++= List(
 lazy val slickDependencies = List(
   "com.typesafe.slick" %% "slick" % slickVersion,
   "com.typesafe.slick" %% "slick-codegen" % slickVersion,
-  "io.github.nafg.slick-migration-api" %% "slick-migration-api" % "0.7.0",
+  "io.github.nafg.slick-migration-api" %% "slick-migration-api" % "0.8.2",
   "org.scala-lang.modules" %% "scala-collection-compat" % "2.0.0"
 )
 
