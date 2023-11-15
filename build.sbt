@@ -53,18 +53,7 @@ lazy val commonSettings = Seq(
     case "releases" =>  Some("releases"  at
         "https://oss.sonatype.org/service/local/staging/deploy/maven2")
   }},
-  credentials += Credentials(Path.userHome / ".ivy2" / ".credentials"),
-  pomExtra := (
-    <scm>
-      <url>git@github.com:lastland/scala-forklift.git</url>
-      <connection>scm:git:git@github.com:lastland/scala-forklift.git</connection>
-      </scm>
-      <developers>
-      <developer>
-      <id>lastland</id>
-      <name>Yao Li</name>
-      </developer>
-      </developers>))
+  credentials += Credentials(Path.userHome / ".ivy2" / ".credentials"))
 
 // Derby is running is secured mode since version 10.12.1.1, so security manager must be disabled for tests  
 // https://stackoverflow.com/questions/48008343/sbt-test-does-not-work-for-spark-test
